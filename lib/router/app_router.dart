@@ -63,28 +63,6 @@ class AppRouter {
       final bool isGoingToInit = state.subloc == splashLocation;
       final bool isGoingToOnBoard = state.subloc == onBoardingLocation;
 
-      // // If not Initialized and not going to Initialized redirect to Splash
-      // if (!isInitialized && !isGoingToInit) {
-      //   return splashLocation;
-      //   // If not onboard and not going to onboard redirect to OnBoarding
-      // } else if (isInitialized && !isOnboarded && !isGoingToOnBoard) {
-      //   return onBoardingLocation;
-      //   // If not logedin and not going to login redirect to Login
-      // } else if (isInitialized &&
-      //     isOnboarded &&
-      //     !isLoggedIn &&
-      //     !isGoingToLogin) {
-      //   return loginLocation;
-      //   // If all the scenarios are cleared but still going to any of that screen redirect to Home
-      // } else if ((isLoggedIn && isGoingToLogin) ||
-      //     (isInitialized && isGoingToInit) ||
-      //     (isOnboarded && isGoingToOnBoard)) {
-      //   return homeLocation;
-      // } else {
-      //   // Else Don't do anything
-      //   return null;
-      // }
-
       // If not initialized and not going to the splash screen
       if (!isInitialized && !isGoingToInit) {
         return splashLocation;
